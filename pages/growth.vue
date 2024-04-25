@@ -12,7 +12,7 @@ onServerPrefetch(async () => {
   return Promise.all([suspense(), suspenseBaby()])
 })
 
-const w_data = girlWeight.slice(0, 6).reduce((acc, cur) => {
+const w_data = girlWeight.slice(0, 12).reduce((acc, cur) => {
   acc.push({
     month: Number(cur.month),
     type: 'p3',
@@ -31,7 +31,7 @@ const w_data = girlWeight.slice(0, 6).reduce((acc, cur) => {
   return acc
 }, [] as unknown[])
 
-const h_data = girlHeight.slice(0, 6).reduce((acc, cur) => {
+const h_data = girlHeight.slice(0, 12).reduce((acc, cur) => {
   acc.push({
     month: Number(cur.month),
     type: 'p3',
